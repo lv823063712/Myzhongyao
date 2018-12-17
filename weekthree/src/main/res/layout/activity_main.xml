@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/MyRecy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/My_Ceshi"
+        android:background="#fff"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/My_Title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#68e688">
+
+        <ImageView
+            android:id="@+id/MyBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/My_Seach"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/tb"
+            android:drawableRight="@drawable/yy"
+            android:hint="搜索" />
+
+        <ImageView
+            android:id="@+id/Switch_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/buju2" />
+
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/My_Ceshi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/My_Title"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/zonghe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="综合" />
+
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/xiaoliang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="销量" />
+
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/jiage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格" />
+
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/shaixuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="筛选" />
+
+    </RadioGroup>
+
+</RelativeLayout>
